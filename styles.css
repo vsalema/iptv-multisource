@@ -515,3 +515,50 @@ details[open] .summary .caret{transform:rotate(90deg)}
 @media (max-height: 480px) and (orientation: landscape){
   #channelList{ max-height: 70vh; }
 }
+/* === Mobile paysage: tout reste visible ================================== */
+
+/* 1) Utiliser la hauteur "small viewport" en paysage pour éviter le rognage */
+@media (orientation: landscape){
+  html, body, .layout { height: 100svh; }
+}
+
+/* 2) En paysage bas, le wrapper scrolle et on fige haut/bas les barres */
+@media (orientation: landscape) and (max-height: 520px){
+  /* La grille: card (min), player (flex), controlbar (min) */
+  .wrap{
+    grid-template-rows: min-content minmax(120px, 1fr) min-content;
+    overflow: auto;                     /* au lieu de hidden en paysage bas */
+    overscroll-behavior: contain;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* Garder la card visible en haut */
+  .card{
+    position: sticky;
+    top: env(safe-area-inset-top, 0px);
+    z-index: 15;
+  }
+
+  /* Garder les barres visibles en bas */
+  #scrubberBar{
+    position: sticky;
+    bottom: calc(0px + env(safe-area-inset-bottom, 0px));
+    z-index: 19;
+  }
+  #controlBar{
+    position: sticky;
+    bottom: calc(0px + env(safe-area-inset-bottom, 0px));
+    z-index: 20;
+  }
+
+  /* Rendre le player flexible: pas de hauteur forcée, respecter 16:9 */
+  #player.video-js{
+    height: auto !important;          /* casse la hauteur fixe 100% */
+    max-height: 100%;                 /* ne dépasse pas la rangée 1fr */
+    aspect-ratio: 16 / 9;             /* conserve les proportions */
+  }
+}
+
+/* 3) Déjà prévu: la controlbar redevient "statique" quand la hauteur est basse.
+   Ce bloc existe plus haut. On le laisse tel quel.
+   @media (max-height: 440px){ .bar-center{ position: static; ... } } */
