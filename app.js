@@ -484,7 +484,7 @@ samples.forEach(s => {
 const overlayLinks = [
   { label: 'Cmtv',   url: '//popcdn.day/cdn.php?stream=CMTVPT' },
   { label: 'TVPT4',  url: 'https://vsalema.github.io/tvpt4/' },
-  { label: 'Disco/Music',url: 'https://cfvod.kaltura.com/pd/p/3253003/sp/325300300/serveFlavor/entryId/1_n6qy7o0p/v/1/ev/6/flavorId/1_ykrrgdcr/fileName/Sandra,_C_C_Catch,_Modern_Talking,_Boney_M,_ABBA,_Lionel_Richie______Disco_Songs_80s_90s_Legend_(Basic_Small_-_WEB_MBL_(H264_400)).mp4/name/a.mp4' },
+  { label: 'Disco/Music',url: 'https://cdnapisec.kaltura.com/p/3253003/sp/325300300/playManifest/entryId/1_n6qy7o0p/flavorIds/1_che6zx2l,1_ykrrgdcr,1_16iv2dgv,1_3i7zbypc,1_cssv5q02/format/applehttp/protocol/https/a.m3u8' },
   { label: 'Disney-pixar',   url: 'https://vsalema.github.io/Disney-pixar/' }
 ];
 (function addOverlayButtons(){
