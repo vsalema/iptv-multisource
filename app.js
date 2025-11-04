@@ -484,7 +484,7 @@ samples.forEach(s => {
 const overlayLinks = [
   { label: 'Cmtv',   url: '//popcdn.day/cdn.php?stream=CMTVPT' },
   { label: 'TVPT4',  url: 'https://vsalema.github.io/tvpt4/' },
-  { label: 'Accueil',url: '' },
+  { label: 'Disco/Music',url: 'https://www.kaltura.com/p/3253003/sp/325300300/download/entry_id/1_n6qy7o0p/flavor/1_onmdodtq/ks/djJ8MzI1MzAwM3w-6tflkA-LEOa3ceoMeeLwH2VNChizmvb1sTgSQGgF9UnKs1lGPaEenD7a2WBFAC8ROyVNZknFzcsBpvVVFzyMqbMufWQE0H652lcw9f8TxTi-46D8-J2KF75RiO53YpRCnNTEyOCOdvbh5GVqz3wMG9Yyeuz0_558Pj6L9qk-0chjmDJQ623WJMe2nSA2YpdgBTMLltb_tZCGLHdx1lke/relocate/Sandra,_C_C_Catch,_Modern_Talking,_Boney_M,_ABBA,_Lionel_Richie_%F0%9F%AA%A9_Disco_Songs_80s_90s_Legend_(Source).mp4' },
   { label: 'Disney-pixar',   url: 'https://vsalema.github.io/Disney-pixar/' }
 ];
 (function addOverlayButtons(){
