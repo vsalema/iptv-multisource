@@ -375,6 +375,7 @@ const samples = [
   { label: 'France tv🇫🇷', url: 'https://vsalema.github.io/tvpt4/css/TVradioZap-TV-Europe+_s_2024-12-27.m3u' },
   { label: 'Youtube-Music', url: 'https://www.youtube.com/watch?v=1MieSL5ZA90' },
   { label: 'MP3', url: 'https://vsalema.github.io/MP3/playlist.m3u8', cover: 'https://image.tmdb.org/t/p/original/sSkhWrgE497L4PYpmPGXwYHulMa.jpg' },
+  { label: 'Disco/Music', url: 'https://cdnapisec.kaltura.com/p/3253003/sp/325300300/playManifest/entryId/1_n6qy7o0p/flavorIds/1_che6zx2l,1_ykrrgdcr,1_16iv2dgv,1_3i7zbypc,1_cssv5q02/format/applehttp/protocol/https/a.m3u8' },
   { label: 'Tony Carreira', url: 'https://vsalema.github.io/tvpt4/css/tony_carreira_best_succes.m3u' },
   { label: 'Overlay', html: '<button id="btnOverlay" type="button" title="Ouvrir un overlay">Overlay</button>' }
 ];
@@ -484,7 +485,7 @@ samples.forEach(s => {
 const overlayLinks = [
   { label: 'Cmtv',   url: '//popcdn.day/cdn.php?stream=CMTVPT' },
   { label: 'TVPT4',  url: 'https://vsalema.github.io/tvpt4/' },
-  { label: 'Disco/Music',url: 'https://cdnapisec.kaltura.com/p/3253003/sp/325300300/playManifest/entryId/1_n6qy7o0p/flavorIds/1_che6zx2l,1_ykrrgdcr,1_16iv2dgv,1_3i7zbypc,1_cssv5q02/format/applehttp/protocol/https/a.m3u8' },
+  { label: 'Music',url: '' },
   { label: 'Disney-pixar',   url: 'https://vsalema.github.io/Disney-pixar/' }
 ];
 (function addOverlayButtons(){
